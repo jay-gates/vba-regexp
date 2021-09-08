@@ -1,2 +1,2 @@
 # vba-regexp
- Code for using regular expressions in Access VBA
+ Some utility functions for using regular expressions in Access VBA. Some code is domain-specific.
