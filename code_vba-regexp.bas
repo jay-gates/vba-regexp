@@ -68,7 +68,7 @@ Function RegExp_GetMatches(ByVal pattern As String, ByVal workString As Variant,
     ' Returns Null for Null input, or Null if no match, or found match groups
     ' NOTE: Must specify capture groups
     ' REQUIRES: Microsoft VBScript Regular Expressions 5.5 library reference
-    ' Last edit 2015-05-15 by JG
+    ' Last edit 2021-09-08 by JG
     
     Dim re As New RegExp
     Dim matchesCol As MatchCollection
@@ -81,7 +81,7 @@ Function RegExp_GetMatches(ByVal pattern As String, ByVal workString As Variant,
     Else
         With re
            .Multiline = False
-           .Global = False
+           .Global = matchGlobal
            .IgnoreCase = True
         End With
         
